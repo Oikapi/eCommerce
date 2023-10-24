@@ -1,0 +1,73 @@
+.header {
+    padding: 74px 156px 0px 156px;
+    position: relative;
+}
+
+.header_row {
+    font-family: 'Mulish';
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_basket {
+    width: 123px;
+    height: 46px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+
+.header_nav {
+    display: flex;
+    padding: 10px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.header_nav .header_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+.lens_icon:after {
+    content: url("./../../img/lens.svg");
+    margin-left: 6px;
+}
+
+.shop_card_button {
+    cursor: pointer;
+    transition: color 500ms;
+    /* height: 30px; */
+}
+
+
+.shop_card_button :hover,
+.shop_card_button.active {
+    color: red;
+}
+
+.shop_card {
+    position: absolute;
+    margin: 20px;
+    padding-top: 50px;
+    width: 300px;
+    /* min-height: 100px; */
+    background-color: bisque;
+}
+
+.header_basket span {
+    margin: 12px 20px 14px 26px;
+}
+
+.header_basket :after {
+    content: url("./../../img/padlock.svg");
+    margin-left: 10px;
+}
