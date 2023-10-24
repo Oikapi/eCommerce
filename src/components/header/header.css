@@ -1,73 +1,56 @@
-.header {
-    padding: 74px 156px 0px 156px;
-    position: relative;
-}
-
-.header_row {
-    font-family: 'Mulish';
+header {
     display: flex;
-    column-gap: 30px;
+    flex-direction: column;
+    /* Направление элементов - колонка */
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    /* background-color: ; */
+    /* Цвет фона шапки */
+    /* color: #fff; */
+    /* Цвет текста */
+    padding: 32px 0px;
+    text-align: center;
+    font-family: Abel;
+    font-size: 12px;
+    color: #494949;
+
+    /* Центрирование текста внутри шапки */
 }
 
-.header_basket {
-    width: 123px;
-    height: 46px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
+.container {
+    min-width: 100%;
 }
 
-
-.header_nav {
-    display: flex;
-    padding: 10px;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+/* Стили для логотипа (ваш класс "logo") */
+.logo {
+    font-size: 24px;
+    /* Размер шрифта логотипа */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Расстояние между логотипом и навигацией */
 }
 
-.header_nav .header_logo {
+/* Стили для навигации (ваш класс "nav" и "nav ul") */
+nav ul {
+    list-style: none;
+    /* padding-left: 787px; */
     display: flex;
     justify-content: center;
 }
 
-.header_nav ul {
-    display: flex;
-    column-gap: 20px;
+nav li {
+    margin-right: 20px;
+    /* Расстояние между элементами навигации */
 }
 
-.lens_icon:after {
-    content: url("./../../img/lens.svg");
-    margin-left: 6px;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    /* Цвет ссылок навигации */
 }
 
-.shop_card_button {
-    cursor: pointer;
-    transition: color 500ms;
-    /* height: 30px; */
-}
-
-
-.shop_card_button :hover,
-.shop_card_button.active {
-    color: red;
-}
-
-.shop_card {
-    position: absolute;
-    margin: 20px;
-    padding-top: 50px;
-    width: 300px;
-    /* min-height: 100px; */
-    background-color: bisque;
-}
-
-.header_basket span {
-    margin: 12px 20px 14px 26px;
-}
-
-.header_basket :after {
-    content: url("./../../img/padlock.svg");
-    margin-left: 10px;
+/* При наведении на ссылки */
+nav a:hover {
+    text-decoration: underline;
+    /* Добавление подчеркивания при наведении */
 }

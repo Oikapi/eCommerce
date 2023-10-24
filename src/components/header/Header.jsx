@@ -12,36 +12,20 @@ function Header() {
     return (
         <header>
             <div className='container'>
-                <div className='header_row'>
-                    <div className='header_nav'>
-                        <ul>
-                            <li>New Arrivals</li>
-                            <li>Shop</li>
-                            <li>About U</li>
-                        </ul>
-
-
-
-                    </div>
-                    <div className='header_logo'>
-                        <img src={logo} alt="hello" />
-                    </div>
-                    <div className='header_nav'>
-                        <ul>
-                            <li><span className="lens_icon">
-                                Search
-                            </span></li>
-                            <span>Sign In</span>
-                            <li><FaShoppingBag onClick={() => setCardOpen(cardOpen = !cardOpen)} className={`shop_card_button ${cardOpen && 'active'}`} /></li>
-                        </ul>
-                        {cardOpen && (
-                            < div className="shop_card">
-                            </div>
-                        )}
-                    </div>
+                <div className='logo'>
+                    <img src="./logo.svg" alt="" />
                 </div>
+                <nav>
+                    <ul>
+                        <li>JEWELRY</li>
+                        <li>CAMPAIGNS</li>
+                        <li>PRESS</li>
+                        <li>SEARCH</li>
+                        <li>CART</li>
+                    </ul>
+                </nav>
             </div>
-        </header >
+        </header>
     );
 }
 
