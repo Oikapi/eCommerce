@@ -1,0 +1,62 @@
+.photo_cont img {
+    min-width: 704px;
+}
+
+.photo_cont {
+    max-width: 704px;
+
+}
+
+.main-info {
+    display: flex;
+
+}
+
+.information {
+    color: #494949;
+    padding-top: 53px;
+    font-family: Abel;
+    padding-left: 101px;
+
+}
+
+.bnt {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.cost {
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.information h {
+    font-size: 18px;
+}
+
+.information p {
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.size_picker {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.quantity_picker {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    justify-content: left;
+}
+
+.quantity_picker p {
+    margin-top: 8px;
+
+}

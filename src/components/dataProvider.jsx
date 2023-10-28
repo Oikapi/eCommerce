@@ -44,17 +44,37 @@ export class DataProvider extends Component {
             },
             {
                 _id: 7,
-                img: "./img/dress1.png",
+                img: "./img/dress7.png",
                 title: "Dress for  my Love ",
                 cost: "30"
             }
-        ]
+        ],
+
+        cart: []
     }
+
+    addCart = (id) => {
+        const { cart, items } = this.state
+        const check = cart.every((item) => {
+            return item._id !== id
+        })
+        if (check) {
+            const item = items.filter((item) => {
+                return id === item._id
+            })
+            this.setState({ cart: [...cart, ...item] })
+        } else {
+            alert('Already added')
+        }
+
+    }
+
     render() {
-        const { items } = this.state;
+        const { items, cart } = this.state;
+        const { addCart } = this
         return (
             <DataContext.Provider
-                value={{ items }}>
+                value={{ items, cart, addCart }}>
                 {this.props.children}
             </DataContext.Provider>
         )

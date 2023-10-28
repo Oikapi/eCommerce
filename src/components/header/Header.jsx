@@ -1,32 +1,36 @@
 import logo from './../../img/Participle+.svg';
 import './header.css'
 import { FaShoppingBag } from "react-icons/fa";
-import { useState } from 'react';
+import { Component, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Modal } from 'rsuite';
 
 
-function Header() {
-    const project = 'Store';
-    let [cardOpen, setCardOpen] = useState(false);
-    console.log(cardOpen);
-    console.log(setCardOpen);
-    return (
-        <header>
-            <div className='container'>
-                <div className='logo'>
-                    <img src="./logo.svg" alt="" />
+export class Header extends Component {
+    render() {
+        const project = 'Store';
+        return (
+            <header>
+                <div className='container'>
+                    <Link to='/'>
+                        <div className='logo'>
+                            <img src="/logo.svg" alt="" />
+                        </div>
+                    </Link>
+                    <nav>
+                        <ul>
+                            <li>JEWELRY</li>
+                            <li>CAMPAIGNS</li>
+                            <li>PRESS</li>
+                            <li>SEARCH</li>
+                            <li > <button>CART</button>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul>
-                        <li>JEWELRY</li>
-                        <li>CAMPAIGNS</li>
-                        <li>PRESS</li>
-                        <li>SEARCH</li>
-                        <li>CART</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
+            </header>
+        );
+    }
 }
 
 

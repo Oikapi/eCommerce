@@ -9,13 +9,15 @@ export class Item extends Component {
         const itemLink = `/product/${_id}`; // Генерируем URL для товара
         console.log(itemLink)
         return (
-            <Link to={itemLink}>
-                <div className="item">
+
+            <div className="item">
+                <Link to={itemLink}>
                     <img src={this.props.item.img} alt="" />
                     <span>{this.props.item.title}</span>
-                    <b>{this.props.item.cost}$</b>
-                </div>
-            </Link>
+                    <span>{this.props.item.cost}$</span>
+                </Link>
+            </div >
+
         )
 
     }

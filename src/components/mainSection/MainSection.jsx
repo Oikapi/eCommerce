@@ -7,14 +7,23 @@ export class MainSection extends Component {
     static contextType = DataContext;
     render() {
         const { items } = this.context;
-        console.log(items)
-        console.log("HEllo")
         return (
             <div className="container">
                 <div className="main_section">
-                    {items.map(el => (
-                        <Item key={el._id} item={el} />
-                    ))}
+                    <div className="left_nav">
+                        <ul>
+                            <li>Collection</li>
+                            <li>Size</li>
+                        </ul>
+                    </div>
+                    <div className="examples">
+                        {items.map(el => (
+                            <Item key={el._id} item={el} />
+                        ))}
+                    </div>
+                    {/* <div className="main_section">
+                        
+                    </div> */}
                 </div>
             </div>
         )
