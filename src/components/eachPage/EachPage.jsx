@@ -73,6 +73,7 @@ class EachPage extends React.Component {
         // this.componentDidMount()
         const id = this.state.item._id;
         const { addCart } = this.context
+        const qua = 0;
         console.log(id)
         return (
             <div className='container'>
@@ -99,7 +100,12 @@ class EachPage extends React.Component {
                         </div>
                         <div className='quantity_picker'>
                             <p>Quantity</p>
-                            <InputNumber size="md" style={this.state.styles2} min={0} />
+                            <InputNumber
+                                size="md"
+                                style={this.state.styles2}
+                                min={1}
+                                defaultValue={1}
+                            />
                         </div>
                         <div className='cost'>$ {this.state.item.cost}</div>
                         <div className='bnt'>

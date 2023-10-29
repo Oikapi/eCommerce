@@ -4,7 +4,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal } from 'rsuite';
-
+import ModalCartWrapped from "./../modalCart/ModalCart.jsx"
 
 export class Header extends Component {
     render() {
@@ -23,7 +23,8 @@ export class Header extends Component {
                             <li>CAMPAIGNS</li>
                             <li>PRESS</li>
                             <li>SEARCH</li>
-                            <li > <button>CART</button>
+                            <li > <ModalCartWrapped />
+
                             </li>
                         </ul>
                     </nav>
