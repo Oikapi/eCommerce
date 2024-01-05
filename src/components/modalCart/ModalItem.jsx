@@ -7,7 +7,7 @@ class ModalItem extends Component {
     static contextType = DataContext;
     render() {
         const { cart, removeFromCart } = this.context
-        const { img, title, cost, _id } = this.props.item
+        const { img, title, cost, _id, count } = this.props.item
         return (
             <div>
                 <div className="item_container">
@@ -18,7 +18,7 @@ class ModalItem extends Component {
                                 {title}
                             </li>
                             <li>
-                                ${cost}
+                                {count} x ${cost}
                             </li>
                         </ul>
                     </div>

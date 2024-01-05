@@ -1,4 +1,5 @@
 import Header from  './components/header/Header'
+import Footer from './components/footer/Footer'
 import React from "react"
 import MainSection from './components/mainSection/MainSection';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -14,6 +15,7 @@ class App extends React.Component {
           <Router>
             <Header/>
             <Section/>
+            <Footer/>
           </Router>
           </div>
       </DataProvider>

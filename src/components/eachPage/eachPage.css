@@ -29,6 +29,20 @@
     color: white;
 }
 
+button.btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    min-width: 324px;
+}
+
+button.btn:hover {
+    background: #444;
+}
+
 .cost {
     font-size: 18px;
     margin-top: 16px;

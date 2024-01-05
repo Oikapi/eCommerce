@@ -50,7 +50,7 @@ class EachPage extends React.Component {
             marginLeft: 36,
             border: '1px solid black'
         },
-        count: 0
+        count: 1
     };
 
     getProduct = (productId) => {
@@ -65,16 +65,20 @@ class EachPage extends React.Component {
 
     componentDidMount() {
         const id = this.props.id;
-        console.log(typeof (id))
+        console.log(id)
         this.getProduct(id);
     }
 
+    changeQua(qua) {
+        this.setState({ count: qua });
+        console.log(this.state.count)
+
+    }
+
     render() {
-        // this.componentDidMount()
         const id = this.state.item._id;
         const { addCart } = this.context
         const qua = 0;
-        console.log(id)
         return (
             <div className='container'>
                 <div className='main-info'>
@@ -105,17 +109,16 @@ class EachPage extends React.Component {
                                 style={this.state.styles2}
                                 min={1}
                                 defaultValue={1}
+                                onChange={(value) => this.changeQua(value)}
                             />
                         </div>
                         <div className='cost'>$ {this.state.item.cost}</div>
-                        <div className='bnt'>
-                            <button onClick={() => addCart(id)}>
-                                ADD TO CART
-                            </button>
-                        </div>
+                        <button className='btn' onClick={() => addCart(id, this.state.count)} >
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

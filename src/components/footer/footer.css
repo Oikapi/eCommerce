@@ -1,0 +1,31 @@
+.footer-container a {
+    color: black;
+}
+
+
+.footer-container {
+    padding-top: 42px;
+    padding-bottom: 43px;
+    display: block;
+    /* flex-direction: column; */
+
+    font-family: Abel;
+    font-size: 11px;
+
+}
+
+p.copy_rights {
+    font-family: Abel;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.footer-container ul {
+    display: flex;
+    gap: 41px;
+    padding-bottom: 43px;
+    justify-content: center;
+    margin: auto;
+}

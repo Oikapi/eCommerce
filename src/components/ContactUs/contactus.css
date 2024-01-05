@@ -1,0 +1,78 @@
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    /* font: 1.25rem / 1.5 sans-serif; */
+    font-family: Abel;
+    font-size: 13px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 40px;
+    padding-left: 15px;
+}
+
+.phone_input {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    border: 2px solid #333;
+    background-color: white;
+    /* border-radius: 0.25rem; */
+}
+
+.form_h1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form_h1 h1 {
+    left: 1px;
+    font-family: Abel;
+    font-size: 18px;
+    padding-left: 18px;
+    font-weight: 500;
+}
+
+.contact_container img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 57px;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    /* justify-content: center; */
+}
+
+.full-width {
+    font-family: Abel;
+    font-size: 13px;
+    grid-column: span 2;
+}
+
+.full-width textarea {
+    padding-top: 13px;
+    min-height: 126px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    min-height: 40px;
+    font-family: Abel;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}

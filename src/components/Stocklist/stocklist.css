@@ -1,0 +1,61 @@
+.country_info ul {
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+    font-size: 12px;
+
+}
+
+.country_info ul li {
+
+    max-width: 171px;
+}
+
+.country_info h3 {
+    font-family: Abel;
+    font-weight: 900;
+}
+
+.country_button {
+    display: flex;
+    font-size: 14px;
+}
+
+.stocklist_container h1 {
+    font-family: Abel;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.stocklist_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 629px;
+}
+
+.country_button {
+    font-size: Abel;
+
+}
+
+.country_button :hover {
+    font-weight: 500;
+
+}
+
+.arrow {
+    padding-bottom: 10px;
+}
+
+.arrow :hover {
+    font-weight: bold;
+}
+
+.stocklist_container img {
+    max-width: 629px;
+}
+
+.buttons {
+    margin-left: 27px;
+}

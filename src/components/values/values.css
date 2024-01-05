@@ -1,0 +1,38 @@
+.value_container {
+    max-width: 627px;
+    font-family: Abel;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin: auto;
+    /* font-size: 18px; */
+}
+
+h1.second_h1 {
+    padding-top: 64px;
+
+}
+
+h1 {
+    padding-bottom: 24px;
+}
+
+.value_container img {
+    max-width: 627px;
+    padding-bottom: 40px;
+}
+
+.value_container h1 {
+    font-size: 18px;
+}
+
+.value_container p {
+    font-size: 16px;
+}
+
+p.foot_text {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+}

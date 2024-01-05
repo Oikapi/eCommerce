@@ -47,13 +47,43 @@ export class DataProvider extends Component {
                 img: "./img/dress7.png",
                 title: "Dress for  my Love ",
                 cost: "30"
+            },
+            {
+                _id: 8,
+                img: "./img/dress8.png",
+                title: "Dress for  my Love ",
+                cost: "30"
+            },
+            {
+                _id: 9,
+                img: "./img/dress9.png",
+                title: "Dress for  my Love ",
+                cost: "30"
+            },
+            {
+                _id: 10,
+                img: "./img/dress10.png",
+                title: "Dress for  my Love ",
+                cost: "30"
+            },
+            {
+                _id: 11,
+                img: "./img/dress11.png",
+                title: "Dress for  my Love ",
+                cost: "30"
+            },
+            {
+                _id: 12,
+                img: "./img/dress12.png",
+                title: "Dress for  my Love ",
+                cost: "30"
             }
         ],
 
         cart: []
     }
 
-    addCart = (id) => {
+    addCart = (id, count) => {
         const { cart, items } = this.state
         const check = cart.every((item) => {
             return item._id !== id
@@ -62,13 +92,31 @@ export class DataProvider extends Component {
             const item = items.filter((item) => {
                 return id === item._id
             })
+            item[0].count = count;
+
             this.setState({ cart: [...cart, ...item] })
+            console.log(this.state.cart)
         } else {
-            alert('Already added')
+            const cart_item = cart.find((item) => {
+                return id === item._id
+            })
+            console.log(cart_item.count)
+            console.log(count)
+            if (cart_item.count !== count) {
+                cart.forEach((item) => {
+                    if (item.id === cart_item.id) {
+                        item.count = count
+                    }
+                })
+
+            }
+            else if (cart_item.count === count) {
+                alert("Already added")
+            }
+
         }
 
     }
-
     removeFromCart = (id) => {
         const { cart } = this.state;
         const updatedCart = cart.filter(item => item._id !== id);

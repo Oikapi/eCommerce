@@ -13,8 +13,11 @@ export class Item extends Component {
             <div className="item">
                 <Link to={itemLink}>
                     <img src={this.props.item.img} alt="" />
-                    <span>{this.props.item.title}</span>
-                    <span>{this.props.item.cost}$</span>
+                    <div className="item_text">
+                        <span>{this.props.item.title}</span>
+                        <span>{this.props.item.cost}$</span>
+                    </div>
+
                 </Link>
             </div >
 

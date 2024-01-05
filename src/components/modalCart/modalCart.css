@@ -16,7 +16,7 @@
 .modal_content {
     min-width: 358px;
     background: white;
-    padding: 40px 37px 0px 32px;
+    padding: 20px 37px 0px 32px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     height: 100vh;
     overflow: auto;
@@ -37,32 +37,48 @@
     padding-bottom: 20px;
 }
 
+.total p+p {
+    margin: 0px;
+}
+
 button.black_btn {
     max-height: 40px;
     /* margin-top: 40px; */
-    padding: 10px 121px;
+    padding: 10px 105px;
     background-color: black;
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 10px;
-
+    font-size: 12px;
+    min-width: 291px;
+    /* border: 1px solid black; */
 }
 
+button.black_btn:hover {
+    background-color: #444;
+}
 
-button.white_btn {
+a.white_btn {
     max-height: 40px;
     /* margin-top: 40px; */
-    padding: 10px 121px;
+    padding: 10px 105px;
     background-color: white;
     display: flex;
     justify-content: center;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
     border: 1px solid black;
     margin-bottom: 10px;
 }
 
+a.white_btn:hover {
+    background-color: #444;
+    color: black;
+}
+
+button.cart_button:hover {
+    font-weight: 900;
+}
 
 .modal_container img {
     max-width: 68px;
