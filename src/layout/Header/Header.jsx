@@ -4,11 +4,9 @@ import { FaShoppingBag } from "react-icons/fa";
 import { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal } from 'rsuite';
-import ModalCartWrapped from "./../modalCart/ModalCart.jsx"
-
+import ModalCartWrapped from "../../components/modalCart/ModalCart.jsx"
 export class Header extends Component {
     render() {
-        const project = 'Store';
         return (
             <header>
                 <div className='container'>
